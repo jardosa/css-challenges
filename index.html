@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: 'Kumbh_Sans_Regular';
+      src: url('Kumbh_Sans/KumbhSans-Regular.ttf');
+      font-family: Kumbh_Sans_Regular;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Kumbh_Sans_Bold';
+      src: url('Kumbh_Sans/KumbhSans-Bold.ttf');
+      font-family: Kumbh_Sans_Bold;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    body {
+      background-attachment: fixed, fixed;
+      background-color: #32A1AD;
+      background-repeat: no-repeat, no-repeat;
+      background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+      background-position: -20em -30em, 40em 30em;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh
+    }
+
+    .card {
+      border-radius: 1em;
+      background-color: white;
+      background-image: url('/images/bg-pattern-card.svg');
+      background-repeat: repeat-x;
+      width: 375px;
+      border: 1px solid black;
+    }
+
+    .avatar {
+      margin: auto;
+      margin-top: 90px;
+      background-image: url('/images/image-victor.jpg');
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+    }
+
+    .bio {
+      margin: 2em;
+      text-align: center;
+    }
+
+    .line {
+      border: 1px solid hsl(0, 3%, 85%);
+    }
+
+    .social-media {
+      display: flex;
+      justify-content: space-evenly;
+
+
+    }
+
+    .social-media p {
+      text-align: center;
+    }
+
+    .social-media p~p {
+      font-size: 12px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+
+    .text {
+      font-size: 18px;
+      font-family: Kumbh_Sans_Regular
+    }
+
+    .text-bold {
+      font-size: 18px;
+      font-family: Kumbh_Sans_Bold
+    }
+
+    .text-gray {
+      color: hsl(0, 0%, 59%);
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+      body {
+        background-position: 120% 340%, -20% -200%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="avatar">
+      </div>
+      <div class='bio'>
+        <span class="text-bold">Victor Crest</span>
+        &nbsp;
+        <span class="text text-gray">26</span>
+        <p class="text text-gray">London</p>
+      </div>
+
+      <div class='line'></div>
+      <div class="social-media">
+        <div>
+          <p class="text-bold">80K</p>
+          <p class="text text-gray">Followers</p>
+        </div>
+        <div>
+          <p class="text-bold">803K</p>
+          <p class="text text-gray">Likes</p>
+        </div>
+        <div>
+          <p class="text-bold">1.4K</p>
+          <p class="text text-gray">Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">John Christian Ardosa</a>.
+  </div>
+</body>
+
+</html>
